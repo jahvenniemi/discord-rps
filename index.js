@@ -34,56 +34,37 @@ client.on('message' , message => {
 		
 		message.channel.send('Bot's choice: '  + result);
 		
-		
-
 		if (result === choiceB) return message.reply ("Draw");
-		
 		
 		switch (choiceB) {
 
-			
-			
-            case 'rock': {
+			case 'rock': {
 				if (result === 'paper') 
 					
-				
-
-				
 				return message.reply('You lost');
-				
-				
-
-				
 				
 				if (result === 'scissors')
 			
 					
 				 return message.reply('You lost');
 				}
-				
-				case 'paper': {
-                if (result === 'scissors') 
+			
+			case 'paper': {
+              			if (result === 'scissors') 
 					
 				return message.reply('You lost')
 				
-					if (result === 'rock')
-				
+				if (result === 'rock')
 				
 				return message.reply('You won');
 
 			}
-            case 'scissors': {
+           		 case 'scissors': {
 				if (result === 'rock') 
 				
-					return message.reply('You lost') 
-				
-				
-
-					
-				
+				return message.reply('You lost') 
 				
 				if (result === 'paper')
-				
 				
 				return message.reply('You won'); 
 					
